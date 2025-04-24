@@ -8,7 +8,7 @@ The solution employs multiple scheduler threads, each assigned to a hairdresser 
 - Dynamic scheduler threads managing client assignments based on resource availability.
 - Resource synchronization ensuring no race conditions occur when accessing chairs or hairdressers.
 - Efficient client handling, where idle chairs immediately process the next available client.
-  
+
 **Technical Implementation**:
 - Concurrency Control: Uses synchronized blocks to manage shared resources.
 - Thread Management: Each hairdresser chair operates in a separate thread, continuously checking for clients.
@@ -16,10 +16,12 @@ The solution employs multiple scheduler threads, each assigned to a hairdresser 
 - This project serves as a practical demonstration of multi-threading, synchronization, and resource management in Java, applicable to real-world scheduling systems.
 
 ### How to run?
-1. Download the repository 
-2. Go to the project root
-3. Build: ```mvn clean package```
-4. Run: ```java -jar target/Test-1.0-SNAPSHOT.jar```
+1. ```git clone https://github.com/KrysztofN/Java_Hairdresser_Concurrency.git```
+2. ```cd Java_Hairdresser_Concurrency```
+3. Import as a maven project
+4. Go to the project root
+5. Build: ```mvn clean package```
+6. Run: ```java -jar target/Test-1.0-SNAPSHOT.jar```
 
 ### Demo
 https://github.com/user-attachments/assets/ea9eb967-c92f-4193-be8e-4b137bdafcb3
