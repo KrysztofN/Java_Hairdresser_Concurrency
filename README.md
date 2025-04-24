@@ -1,7 +1,19 @@
 # Java_Hairdresser_Concurrency
-Java Hairdresser Concurrency project solving shared resource problems 
+### Project Overview
+This Java project models a hairdresser salon system with concurrent client scheduling, addressing shared resource management challenges. The system implements a thread-safe queue with a fixed capacity, adhering to the FIFO (First-In-First-Out) principle. When the queue reaches maximum capacity, new clients are rejected.
+The solution employs multiple scheduler threads, each assigned to a hairdresser chair, which continuously poll the queue for clients. Upon availability of resources (a free chair and a matching hairdresser), a client is served. After service completion, resources are released, allowing the next client in the queue to be processed.
 
-Given problem solves hairdresser like system. Clients fill the que in FIFO style (with given size), if the queue is full it won't accept any more clients. Next for N number of chairs we invoke the same number of scheduler threads. Each one of them checks for the client in the queue and tries to serve him according to the actual state of resources (if available then he will be served, if not it waits until reasources are available). After the client is served the resources are freed and the nest customer is served.
+**Key Features**:
+- Thread-safe queue with a fixed maximum size to prevent overloading.
+- Dynamic scheduler threads managing client assignments based on resource availability.
+- Resource synchronization ensuring no race conditions occur when accessing chairs or hairdressers.
+- Efficient client handling, where idle chairs immediately process the next available client.
+  
+**Technical Implementation**:
+- Concurrency Control: Uses synchronized blocks to manage shared resources.
+- Thread Management: Each hairdresser chair operates in a separate thread, continuously checking for clients.
+- Graceful Rejection: Clients are denied entry if the queue is full, simulating real-world capacity constraints.
+- This project serves as a practical demonstration of multi-threading, synchronization, and resource management in Java, applicable to real-world scheduling systems.
 
 ### How to run?
 1. Download the repository 
