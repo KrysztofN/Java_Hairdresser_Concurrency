@@ -1,0 +1,10 @@
+{
+  "Chairs" : 5,
+  "Hairdressers" : {
+    "Count" : 10,
+    "ShaveMaster" : 2,
+    "ClippingMaster" : 6,
+    "ModelingMaster" : 2
+  },
+  "QueueSize" : 20
+}
