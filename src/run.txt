@@ -1,0 +1,3 @@
+build:
+    mvn clean package
+    java -jar target/Test-1.0-SNAPSHOT.jar
