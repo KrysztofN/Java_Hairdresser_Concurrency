@@ -20,7 +20,7 @@ The solution employs multiple scheduler threads, each assigned to a hairdresser 
 2. ```cd Java_Hairdresser_Concurrency```
 3. Go to the project root
 4. *If you want to build yourself (ensure you have maven installed) Build: ```mvn clean package```
-5. Linu) Run:```java -jar target/Test-1.0-SNAPSHOT.jar```
+5. Linux Run:```java -jar target/Test-1.0-SNAPSHOT.jar```
    <br>
    Windows Run: ```jawa -jar target/Test-1.0-SNAPSHOT.jar```
 
