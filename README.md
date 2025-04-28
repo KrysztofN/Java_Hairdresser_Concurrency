@@ -18,10 +18,11 @@ The solution employs multiple scheduler threads, each assigned to a hairdresser 
 ### How to run?
 1. ```git clone https://github.com/KrysztofN/Java_Hairdresser_Concurrency.git```
 2. ```cd Java_Hairdresser_Concurrency```
-3. Import as a maven project
-4. Go to the project root
-5. Build: ```mvn clean package```
-6. Run: ```java -jar target/Test-1.0-SNAPSHOT.jar```
+3. Go to the project root
+4. *If you want to build yourself (ensure you have maven installed) Build: ```mvn clean package```
+5. Linu) Run:```java -jar target/Test-1.0-SNAPSHOT.jar```
+   <br>
+   Windows Run: ```jawa -jar target/Test-1.0-SNAPSHOT.jar```
 
 ### Demo
 https://github.com/user-attachments/assets/ea9eb967-c92f-4193-be8e-4b137bdafcb3
